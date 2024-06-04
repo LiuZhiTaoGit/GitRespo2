@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybatis?serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+
+
+#配置日志项,输出到控制台
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #驼峰命名自动映射开关  a_ column----》 aColumn
+    map-underscore-to-camel-case: true
+
